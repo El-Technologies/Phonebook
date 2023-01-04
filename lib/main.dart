@@ -33,11 +33,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: const Center(
-          child: Text(
-            "The quick brown fox jumped over the lazy dog",
-            style: TextStyle(color: Colors.black),
-          ),
+        child: Column(
+          children: [
+            
+          ],
         ),
       ),
     );
