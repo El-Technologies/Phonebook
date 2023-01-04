@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eltech.phonebook">
    <application
-        android:label="phonebook"
+        android:label="El Phonebook"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
