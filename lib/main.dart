@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: const Center(
           child: Text(
-            "The quick brown fox jumped",
+            "The quick brown fox jumped over the lazy dog",
             style: TextStyle(color: Colors.black),
           ),
         ),
