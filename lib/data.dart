@@ -16,6 +16,7 @@ List<Contact> contacts = [
   ),
   Contact(
     firstName: "Silver",
+    email: "silver@gmail.com",
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(

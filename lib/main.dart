@@ -81,7 +81,10 @@ class _HomePageState extends State<HomePage> {
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(contacts[index].email!),
+                              Text(
+                                contacts[index].email!,
+                                style: TextStyle(),
+                              ),
                               Text(contacts[index].phoneNumber),
                             ],
                           )
