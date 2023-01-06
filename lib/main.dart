@@ -83,7 +83,9 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Text(
                                 contacts[index].email!,
-                                style: TextStyle(),
+                                style: TextStyle(
+                                  fontSize: 10.sp,
+                                ),
                               ),
                               Text(contacts[index].phoneNumber),
                             ],
