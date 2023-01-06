@@ -63,6 +63,16 @@ class _HomePageState extends State<HomePage> {
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
                   return ListTile(
+                    leading: Card(
+                      shape: const CircleBorder(),
+                      child: Container(
+                        height: 40.w,
+                        width: 40.w,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                    ),
                     title: Text(contacts[index].firstName),
                   );
                 },
