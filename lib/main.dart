@@ -76,7 +76,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     title: Text(
-                        "${contacts[index].firstName} ${contacts[index].lastName ??= ""}"),
+                      "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     subtitle: contacts[index].email != null
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
