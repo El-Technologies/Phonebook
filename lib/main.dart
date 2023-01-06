@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/custom/appbar.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -34,7 +36,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          
+          children: [
+            CustomAppBar(),
+          ],
         ),
       ),
     );
