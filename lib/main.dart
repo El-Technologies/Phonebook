@@ -42,13 +42,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: ,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: ,
+      ),
       body: SafeArea(
         child: Column(
           children: [
             const CustomAppBar(),
             SizedBox(height: 10.h),
-            CustomSearchBar(),
+            const CustomSearchBar(),
           ],
         ),
       ),
