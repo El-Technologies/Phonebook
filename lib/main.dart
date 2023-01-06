@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     title: Text(contacts[index].firstName),
+                    subtitle: Text,
                   );
                 },
               ),
