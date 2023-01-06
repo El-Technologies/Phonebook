@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/contact.dart';
 import 'custom/appbar.dart';
 import 'custom/searchbar.dart';
 import 'data.dart';
@@ -44,7 +45,9 @@ class _HomePageState extends State<HomePage> {
     contacts.sort((a, b) => a.firstName.compareTo(b.firstName));
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          contacts.add(Contact(firstName: "Somto", phoneNumber: "+234"));
+        },
         child: Icon(
           Icons.add,
           size: 20.sp,
