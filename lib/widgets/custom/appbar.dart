@@ -15,6 +15,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
         Container(
           height: 50,
           width: 50,
+          padding: EdgeInsets.all(value),
           decoration: const BoxDecoration(
             color: Colors.blue,
             shape: BoxShape.circle,
