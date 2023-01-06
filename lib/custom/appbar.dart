@@ -7,7 +7,9 @@ class CustomAppBar extends StatelessWidget {
     required this.title,
   });
 
+  final Widget leading;
   final String title;
+  final Widget trailing;
 
   @override
   Widget build(BuildContext context) {
