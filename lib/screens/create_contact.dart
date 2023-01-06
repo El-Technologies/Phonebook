@@ -50,21 +50,9 @@ class _CreateContactState extends State<CreateContact> {
                       ],
                     ),
                     SizedBox(height: 20.h),
-                    Row(
-                      children: [
-                        const Icon(Icons.person_outline),
-                        Column(
-                          children: const [
-                            CustomField(
-                              hintText: "First name",
-                            ),
-                            CustomField(
-                              hintText: "Last name",
-                            ),
-                          ],
-                        )
-                      ],
-                    )
+                    const CustomField(
+                      hintText: "First name",
+                    ),
                   ],
                 ),
               ),
@@ -80,9 +68,11 @@ class CustomField extends StatefulWidget {
   const CustomField({
     super.key,
     required this.hintText,
+    this.icon,
   });
 
   final String hintText;
+  final Icon? icon;
 
   @override
   State<CustomField> createState() => _CustomFieldState();
@@ -93,6 +83,10 @@ class _CustomFieldState extends State<CustomField> {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
+        icon: icon ?? Icon(
+          Icons.person_outlined,
+          size: 20.sp,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.r),
         ),
