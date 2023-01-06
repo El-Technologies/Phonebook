@@ -55,8 +55,11 @@ class _CreateContactState extends State<CreateContact> {
                         const Icon(Icons.person_outline),
                         Column(
                           children: const [
-                             CustomField(
+                            CustomField(
                               hintText: "First name",
+                            ),
+                            CustomField(
+                              hintText: "Last name",
                             ),
                           ],
                         )
@@ -90,10 +93,6 @@ class _CustomFieldState extends State<CustomField> {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        icon: Icon(
-          Icons.person_outlined,
-          size: 20.sp,
-        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.r),
         ),
