@@ -13,17 +13,24 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),
-      child: TextField(
-        decoration: InputDecoration(
-          border: OutlineInputBorder(
-              borderSide: BorderSide.none,
-              borderRadius: BorderRadius.circular(30.r)),
-          fillColor: const Color.fromARGB(255, 206, 205, 205),
-          filled: true,
-          contentPadding: EdgeInsets.symmetric(
-            horizontal: 17.77.h,
+      child: Stack(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.circular(30.r)),
+              fillColor: const Color.fromARGB(255, 230, 228, 228),
+              filled: true,
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 17.77.h,
+              ),
+            ),
           ),
-        ),
+          Container(
+            decoration: BoxDecoration(color: constColors.blue),
+          )
+        ],
       ),
     );
   }
