@@ -28,7 +28,9 @@ class _CustomAppBarState extends State<CustomAppBar> {
           ),
           Text(
             "Contact",
-            
+            style: TextStyle(
+              fontSize: 20.sp,
+            ),
           ),
           Card(
             shape: const CircleBorder(),
