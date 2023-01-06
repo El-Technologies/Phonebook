@@ -4,8 +4,7 @@ class Contact {
   String email;
   String phoneNumber;
 
-  Contact(this.firstName, this.lastName, this.email, this.phoneNumber);
+  Contact({this.firstName, this.lastName, this.email, this.phoneNumber});
 }
 
-void main(List<String> args) {
-}
+void main(List<String> args) {}
