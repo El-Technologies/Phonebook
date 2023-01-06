@@ -34,7 +34,10 @@ class _CustomAppBarState extends State<CustomAppBar> {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
-              child: Icon(),
+              child: Icon(
+                Icons.add,
+                size: 20.sp,
+              ),
             ),
           ),
         ],
