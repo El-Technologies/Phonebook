@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: SafeArea(
-        child: Column(
+        child: Column( 
           children: [
             const CustomAppBar(
               title: "Contacts",
