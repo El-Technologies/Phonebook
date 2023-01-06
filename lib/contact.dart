@@ -1,6 +1,10 @@
 class Contact {
-  String firsrName;
+  String firstName;
   String lastName;
   String email;
-  
+  String phoneNumber;
+
+  Contact() {
+
+  }
 }
