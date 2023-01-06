@@ -25,11 +25,14 @@ class _CreateContactState extends State<CreateContact> {
             Container(
               height: 100.w,
               width: 100.w,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Color.fromARGB(255, 206, 219, 230),
               ),
-              child: Icon(Icons.add),
+              child: Icon(
+                Icons.add_photo_alternate_rounded,
+                size: 50.sp,
+              ),
             )
           ],
         ),
