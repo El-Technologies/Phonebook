@@ -46,9 +46,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          setState(() {
-            
-          });
+          setState(() {});
         },
         child: Icon(
           Icons.add,
@@ -79,7 +77,12 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                         "${contacts[index].firstName} ${contacts[index].lastName ??= ""}"),
-                    subtitle: Text(contacts[index].phoneNumber),
+                    subtitle: Column(
+                      children: [
+                        Text(contacts[index].email ??= ""),
+                        Text(contacts[index].phoneNumber),
+                      ],
+                    ),
                   );
                 },
               ),
