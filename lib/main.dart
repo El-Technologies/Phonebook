@@ -46,7 +46,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          contacts.add(Contact(firstName: "Somto", phoneNumber: "+234"));
+          setState(() {
+            
+          });
         },
         child: Icon(
           Icons.add,
