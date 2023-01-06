@@ -55,6 +55,7 @@ class _HomePageState extends State<HomePage> {
             const CustomAppBar(),
             SizedBox(height: 10.h),
             const CustomSearchBar(),
+            SizedBox(height: 10.h),
             
           ],
         ),
