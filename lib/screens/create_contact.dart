@@ -19,7 +19,7 @@ class _CreateContactState extends State<CreateContact> {
         child: Column(
           children: [
             const CustomAppBar(
-              title: "Create Contact",
+              title: "Add Contact",
             ),
             SizedBox(height: 10.h),
             Container(
@@ -27,8 +27,9 @@ class _CreateContactState extends State<CreateContact> {
               width: 100.w,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Color.fromARGB(255, 219, 233, 245),
+                color: Color.fromARGB(255, 206, 219, 230),
               ),
+              child: Icon(Icons.add),
             )
           ],
         ),
