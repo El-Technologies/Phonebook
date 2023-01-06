@@ -16,15 +16,12 @@ class _CustomAppBarState extends State<CustomAppBar> {
       child: Row(
         children: [
           Card(
-            shape: ,
+            shape: const CircleBorder(),
             child: Container(
               height: 50.w,
               width: 50.w,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(
-                  color: Colors.grey,
-                ),
               ),
             ),
           )
