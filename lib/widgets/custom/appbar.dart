@@ -15,13 +15,16 @@ class _CustomAppBarState extends State<CustomAppBar> {
       padding: EdgeInsets.all(10.sp),
       child: Row(
         children: [
-          Container(
-            height: 50.w,
-            width: 50.w,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: Colors.grey,
+          Card(
+            shape: ,
+            child: Container(
+              height: 50.w,
+              width: 50.w,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.grey,
+                ),
               ),
             ),
           )
