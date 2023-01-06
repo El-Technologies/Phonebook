@@ -18,7 +18,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context)
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const nextPage(),
+            ),
+          )
         },
         child: Icon(
           Icons.add,
