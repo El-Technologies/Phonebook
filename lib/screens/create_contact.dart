@@ -49,7 +49,10 @@ class _CreateContactState extends State<CreateContact> {
                   ),
                   SizedBox(height: 20.h),
                   TextField(
-                    style: ,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(20.r)),
+                    ),
                   )
                 ],
               ),
