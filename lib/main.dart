@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10.h),
             const CustomSearchBar(),
             SizedBox(height: 10.h),
-            
+            ListView.builder(itemBuilder: (context, index))
           ],
         ),
       ),
