@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:phonebook/custom/appbar.dart';
 
 class CreateContact extends StatefulWidget {
   const CreateContact({super.key});
@@ -15,9 +16,7 @@ class _CreateContactState extends State<CreateContact> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-            
-          ],
+          children: [const CustomAppBar()],
         ),
       ),
     );
