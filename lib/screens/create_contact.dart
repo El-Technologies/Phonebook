@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -47,7 +48,9 @@ class _CreateContactState extends State<CreateContact> {
                     ],
                   ),
                   SizedBox(height: 20.h),
-
+                  TextField(
+                    style: ,
+                  )
                 ],
               ),
             )
