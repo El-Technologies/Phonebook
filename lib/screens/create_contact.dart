@@ -23,8 +23,11 @@ class _CreateContactState extends State<CreateContact> {
             ),
             SizedBox(height: 10.h),
             Container(
+              height: 100.w,
+              width: 100.w,
               decoration: BoxDecoration(
-                
+                shape: BoxShape.circle,
+                color: Color.fromARGB(255, 219, 233, 245),
               ),
             )
           ],
