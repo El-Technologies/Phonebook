@@ -28,20 +28,6 @@ class CustomAppBar extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Card(
-            shape: const CircleBorder(),
-            child: Container(
-              height: 40.w,
-              width: 40.w,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.add,
-                size: 20.sp,
-              ),
-            ),
-          ),
         ],
       ),
     );

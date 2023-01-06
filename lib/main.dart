@@ -44,7 +44,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: ,
+        child: Icon(
+          Icons.add,
+          size: 20.sp,
+        ),
       ),
       body: SafeArea(
         child: Column(
