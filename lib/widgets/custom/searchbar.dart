@@ -36,9 +36,13 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               child: Container(
                 width: 35.w,
                 height: 35.w,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.blue,
                   shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.search,
+                  color: ,
                 ),
               ),
             ),
