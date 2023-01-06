@@ -4,6 +4,7 @@ import 'package:phonebook/contact.dart';
 import 'custom/appbar.dart';
 import 'custom/searchbar.dart';
 import 'data.dart';
+import 'screens/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,5 +32,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
