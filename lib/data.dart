@@ -8,7 +8,6 @@ List<Contact> contacts = [
   ),
   Contact(
     firstName: "Sam",
-    email: "sam@gmail.com",
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(
@@ -26,6 +25,7 @@ List<Contact> contacts = [
   ),
   Contact(
     firstName: "Carie",
+    email: "carie@gmail.com",
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(
