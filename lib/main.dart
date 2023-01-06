@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:phonebook/widgets/custom/searchbar.dart';
-
+import 'custom/appbar.dart';
+import 'custom/searchbar.dart';
 import 'data.dart';
-import 'widgets/custom/appbar.dart';
+
 
 void main() {
   runApp(const MyApp());
