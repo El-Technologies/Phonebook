@@ -31,7 +31,14 @@ class _CreateContactState extends State<CreateContact> {
                 color: Color.fromARGB(255, 206, 219, 230),
               ),
               child: Image.asset("assets/images/add_photo.png"),
-            )
+            ),
+            SizedBox()
+            const Text(
+              "Add photo",
+              style: TextStyle(
+                color: Colors.blue,
+              ),
+            ),
           ],
         ),
       ),
