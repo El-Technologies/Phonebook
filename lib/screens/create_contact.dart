@@ -54,6 +54,7 @@ class _CreateContactState extends State<CreateContact> {
                       icon: Icon(Icons.person_outline),
                       hintText: "First name",
                     ),
+                    SizedBox(height: 10.h),
                     const CustomField(
                       hintText: "Last name",
                     ),
@@ -92,11 +93,14 @@ class _CustomFieldState extends State<CustomField> {
                 Icons.person_outlined,
                 size: 20.sp,
               )
-            : SizedBox(),
+            : SizedBox(
+                width: 20.w,
+              ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.r),
         ),
         hintText: widget.hintText,
+        
       ),
     );
   }
