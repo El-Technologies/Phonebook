@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
+      minTextAdapt: true,
       builder: (context, child) {
         return MaterialApp(
           title: 'El Phonebook',
@@ -43,7 +44,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            CustomAppBar(),
+            const CustomAppBar(),
           ],
         ),
       ),
