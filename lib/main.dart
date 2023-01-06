@@ -4,6 +4,7 @@ import 'custom/appbar.dart';
 import 'custom/searchbar.dart';
 import 'data.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -72,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    title: const Text("{contacts[index].firstName} "),
+                    title: Text(contacts[index].firstName + " " + ),
                     subtitle: Text(contacts[index].phoneNumber),
                   );
                 },
