@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'widgets/custom/appbar.dart';
 
@@ -11,14 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'El Phonebook',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: "Poppins",
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      builder: (context,  child) {  },
+      child: MaterialApp(
+        title: 'El Phonebook',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          fontFamily: "Poppins",
+        ),
+        home: const HomePage(),
+        debugShowCheckedModeBanner: false,
       ),
-      home: const HomePage(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
