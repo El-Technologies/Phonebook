@@ -21,7 +21,12 @@ class _CreateContactState extends State<CreateContact> {
             const CustomAppBar(
               title: "Create Contact",
             ),
-            SizedBox(height: 10.h)
+            SizedBox(height: 10.h),
+            Container(
+              decoration: BoxDecoration(
+                
+              ),
+            )
           ],
         ),
       ),
