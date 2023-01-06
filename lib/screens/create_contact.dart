@@ -16,7 +16,11 @@ class _CreateContactState extends State<CreateContact> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [const CustomAppBar()],
+          children: [
+            const CustomAppBar(
+              title: "Create Contact",
+            )
+          ],
         ),
       ),
     );

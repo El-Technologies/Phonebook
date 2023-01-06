@@ -34,7 +34,9 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            const CustomAppBar(),
+            const CustomAppBar(
+              title: "Contacts",
+            ),
             SizedBox(height: 10.h),
             const CustomSearchBar(),
             SizedBox(height: 10.h),

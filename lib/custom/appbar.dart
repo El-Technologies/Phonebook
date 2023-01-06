@@ -4,7 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
     super.key,
+    required this.title,
   });
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +27,7 @@ class CustomAppBar extends StatelessWidget {
             ),
           ),
           Text(
-            "Contacts",
+            title,
             style: TextStyle(
               fontSize: 25.sp,
               fontWeight: FontWeight.bold,
