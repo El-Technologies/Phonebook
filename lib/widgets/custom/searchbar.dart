@@ -11,15 +11,18 @@ class CustomSearchBar extends StatefulWidget {
 class _CustomSearchBarState extends State<CustomSearchBar> {
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(13.32.r)),
-        fillColor: const Color.fromARGB(255, 206, 205, 205),
-        filled: true,
-        contentPadding: EdgeInsets.symmetric(
-          horizontal: 17.77.h,
+    return Padding(
+      padding: const EdgeInsets.all(10),
+      child: TextField(
+        decoration: InputDecoration(
+          border: OutlineInputBorder(
+              borderSide: BorderSide.none,
+              borderRadius: BorderRadius.circular(30.r)),
+          fillColor: const Color.fromARGB(255, 206, 205, 205),
+          filled: true,
+          contentPadding: EdgeInsets.symmetric(
+            horizontal: 17.77.h,
+          ),
         ),
       ),
     );
