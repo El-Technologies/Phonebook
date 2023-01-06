@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
             ),
           ),
           Text(
-            "Contact",
+            "Contacts",
             style: TextStyle(
               fontSize: 25.sp,
               fontWeight: FontWeight.bold,
