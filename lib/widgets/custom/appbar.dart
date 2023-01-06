@@ -18,10 +18,11 @@ class _CustomAppBarState extends State<CustomAppBar> {
           Container(
             height: 50.w,
             width: 50.w,
-            decoration: const BoxDecoration(
-              color: Colors.blue,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                )),
           )
         ],
       ),
