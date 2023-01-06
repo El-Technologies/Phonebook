@@ -12,12 +12,13 @@ class _CustomAppBarState extends State<CustomAppBar> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        widget(
-          child: Card(
-            
-            color: Colors.black,
+        Container(
+          height: 20,
+          width: 20,
+          decoration: BoxDecoration(
+            color: Colors.yellow,
           ),
-        ),
+        )
       ],
     );
   }
