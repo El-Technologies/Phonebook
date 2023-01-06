@@ -69,6 +69,14 @@ class _CreateContactState extends State<CreateContact> {
                       ),
                       hintText: "Phone",
                     ),
+                    SizedBox(height: 20.h),
+                    CustomField(
+                      icon: Icon(
+                        Icons.email_outlined,
+                        size: 20.sp,
+                      ),
+                      hintText: "Email",
+                    ),
                   ],
                 ),
               ),
