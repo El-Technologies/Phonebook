@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/contact.dart';
 import 'package:phonebook/custom/appbar.dart';
+import 'package:phonebook/data.dart';
 
 class CreateContact extends StatefulWidget {
   const CreateContact({super.key});
@@ -13,12 +12,12 @@ class CreateContact extends StatefulWidget {
 }
 
 class _CreateContactState extends State<CreateContact> {
-  final TextEditingController firstName = TextEditingController();
-  final TextEditingController lastName = TextEditingController();
-  final TextEditingController phone = TextEditingController();
-  final TextEditingController email = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    final TextEditingController firstName = TextEditingController();
+    final TextEditingController lastName = TextEditingController();
+    final TextEditingController phone = TextEditingController();
+    final TextEditingController email = TextEditingController();
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -31,7 +30,24 @@ class _CreateContactState extends State<CreateContact> {
                   child: CustomAppBar(
                     title: "Add Contact",
                     trailing: MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        print(firstName.text.trim() != "");
+                        print(phone.text.trim() != "");
+                        setState(() {
+                          if (firstName.text.trim().isNotEmpty &&
+                              phone.text.isNotEmpty) {
+                            contacts.add(
+                              Contact(
+                                firstName: firstName.text,
+                                lastName: lastName.text,
+                                phoneNumber: phone.text,
+                                email: email.text,
+                              ),
+                            );
+                            Navigator.of(context).pop();
+                          }
+                        });
+                      },
                       child: Container(
                         width: 70.w,
                         padding: EdgeInsets.all(10.sp),
@@ -143,6 +159,11 @@ class _CustomFieldState extends State<CustomField> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onChanged: (value) {
+        setState(() {
+          widget.controller.text = value;
+        });
+      },
       decoration: InputDecoration(
         icon: widget.icon ??
             SizedBox(

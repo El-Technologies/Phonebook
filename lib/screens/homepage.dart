@@ -71,7 +71,8 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    subtitle: contacts[index].email != null
+                    subtitle: contacts[index].email != null &&
+                            contacts[index].email?.trim() != ""
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
