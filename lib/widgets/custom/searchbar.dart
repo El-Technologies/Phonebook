@@ -16,23 +16,27 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                  borderSide: BorderSide.none,
-                  borderRadius: BorderRadius.circular(30.r)),
-              fillColor: const Color.fromARGB(255, 230, 228, 228),
-              filled: true,
-              contentPadding: EdgeInsets.symmetric(
-                horizontal: 17.77.h,
+          SizedBox(
+            height: 50,
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(30.r)),
+                fillColor: const Color.fromARGB(255, 230, 228, 228),
+                filled: true,
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: 17.77.h,
+                ),
               ),
             ),
           ),
           Positioned(
             right: 5,
+            top: 5,
             child: Container(
-              width: 45.w,
-              height: 45.w,
+              width: 35.w,
+              height: 35.w,
               decoration: BoxDecoration(
                 color: Colors.blue,
                 shape: BoxShape.circle,
