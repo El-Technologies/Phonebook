@@ -28,6 +28,9 @@ class CustomAppBar extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(
+            width: 50.w,
+          )
         ],
       ),
     );
