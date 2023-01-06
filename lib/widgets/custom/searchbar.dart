@@ -14,6 +14,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Stack(
+        clipBehavior: Clip.none,
         children: [
           TextField(
             decoration: InputDecoration(
@@ -27,12 +28,15 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               ),
             ),
           ),
-          Container(
-            width: 45.w,
-            height: 45.w,
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              shape: BoxShape.circle,
+          Positioned(
+            right: 5,
+            child: Container(
+              width: 45.w,
+              height: 45.w,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                shape: BoxShape.circle,
+              ),
             ),
           )
         ],
