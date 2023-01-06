@@ -20,6 +20,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
           children: [
             TextField(
               decoration: InputDecoration(
+                hintText: "Search",
                 border: OutlineInputBorder(
                     borderSide: BorderSide.none,
                     borderRadius: BorderRadius.circular(30.r)),
