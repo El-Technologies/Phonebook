@@ -12,6 +12,14 @@ class CreateContact extends StatefulWidget {
 class _CreateContactState extends State<CreateContact> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
