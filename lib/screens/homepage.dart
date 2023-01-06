@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          goto
+          Navigator.of(context)
         },
         child: Icon(
           Icons.add,
