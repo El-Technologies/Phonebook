@@ -57,8 +57,7 @@ class _CreateContactState extends State<CreateContact> {
                           size: 20.sp,
                         ),
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.r),
-                        ),
+                            borderRadius: BorderRadius.circular(10.r)),
                       ),
                     )
                   ],
