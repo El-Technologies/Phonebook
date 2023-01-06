@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/widgets/custom/searchbar.dart';
 
 import 'widgets/custom/appbar.dart';
 
@@ -43,8 +44,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [
-            CustomAppBar(),
+          children: [
+            const CustomAppBar(),
+            SizedBox(height: 10.h),
+            CustomSearchBar(),
           ],
         ),
       ),
