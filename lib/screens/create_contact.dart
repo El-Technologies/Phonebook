@@ -22,7 +22,35 @@ class _CreateContactState extends State<CreateContact> {
               title: "Add Contact",
             ),
             SizedBox(height: 10.h),
-            Expanded(child: ListView(children: [],))
+            Expanded(
+              child: ListView(
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        height: 100.w,
+                        width: 100.w,
+                        padding: EdgeInsets.all(20.sp),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color.fromARGB(255, 206, 219, 230),
+                        ),
+                        child: Image.asset("assets/images/add_photo.png"),
+                      ),
+                      SizedBox(height: 10.h),
+                      const Text(
+                        "Add photo",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 9, 92, 160),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20.h),
+
+                ],
+              ),
+            )
           ],
         ),
       ),
