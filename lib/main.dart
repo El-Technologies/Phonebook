@@ -42,7 +42,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -58,11 +57,15 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10.h),
             const CustomSearchBar(),
             SizedBox(height: 10.h),
-            ListView.builder(
-              itemCount: contacts.length,
-              itemBuilder: (context, index) {
-                return ListTile();
-              },
+            Expanded(
+              child: ListView.builder(
+                itemCount: contacts.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(contacts[index].firstName),
+                  );
+                },
+              ),
             )
           ],
         ),
