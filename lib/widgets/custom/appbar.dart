@@ -10,18 +10,20 @@ class CustomAppBar extends StatefulWidget {
 class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          height: 50,
-          width: 50,
-          padding: EdgeInsets.all(value),
-          decoration: const BoxDecoration(
-            color: Colors.blue,
-            shape: BoxShape.circle,
-          ),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(10),
+      child: Row(
+        children: [
+          Container(
+            height: 50,
+            width: 50,
+            decoration: const BoxDecoration(
+              color: Colors.blue,
+              shape: BoxShape.circle,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
