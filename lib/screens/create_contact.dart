@@ -45,6 +45,8 @@ class _CreateContactState extends State<CreateContact> {
                               ),
                             );
                             Navigator.of(context).pop();
+                            contacts.sort(
+                                (a, b) => a.firstName.compareTo(b.firstName));
                           }
                         });
                       },
