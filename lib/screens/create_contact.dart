@@ -58,6 +58,10 @@ class _CreateContactState extends State<CreateContact> {
                     const CustomField(
                       hintText: "Last name",
                     ),
+                    SizedBox(height: 20.h),
+                    const CustomField(
+                      hintText: " name",
+                    ),
                   ],
                 ),
               ),
@@ -100,7 +104,7 @@ class _CustomFieldState extends State<CustomField> {
           borderRadius: BorderRadius.circular(10.r),
         ),
         hintText: widget.hintText,
-        
+        labelText: widget.hintText,
       ),
     );
   }
