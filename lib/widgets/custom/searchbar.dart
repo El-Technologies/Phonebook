@@ -13,12 +13,12 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10),
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: [
-          SizedBox(
-            height: 50,
-            child: TextField(
+      child: SizedBox(
+        height: 50,
+        child: Stack(
+          clipBehavior: Clip.none,
+          children: [
+            TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                     borderSide: BorderSide.none,
@@ -30,20 +30,20 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
                 ),
               ),
             ),
-          ),
-          Positioned(
-            right: 5,
-            top: 5,
-            child: Container(
-              width: 35.w,
-              height: 35.w,
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                shape: BoxShape.circle,
+            Positioned(
+              right: 5,
+              top: 5,
+              child: Container(
+                width: 35.w,
+                height: 35.w,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  shape: BoxShape.circle,
+                ),
               ),
             ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }
