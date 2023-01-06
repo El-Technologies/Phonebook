@@ -50,9 +50,18 @@ class _CreateContactState extends State<CreateContact> {
                       ],
                     ),
                     SizedBox(height: 20.h),
-                    const CustomField(
-                      hintText: "First name",
-                    ),
+                    Row(
+                      children: [
+                        const Icon(Icons.person_outline),
+                        Column(
+                          children: const [
+                             CustomField(
+                              hintText: "First name",
+                            ),
+                          ],
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
