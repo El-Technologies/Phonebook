@@ -51,7 +51,8 @@ class _CreateContactState extends State<CreateContact> {
                   TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(20.r)),
+                        borderRadius: BorderRadius.circular(10.r),
+                      ),
                     ),
                   )
                 ],
