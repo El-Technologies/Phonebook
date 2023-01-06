@@ -23,9 +23,9 @@ class _CustomAppBarState extends State<CustomAppBar> {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
-              
             ),
-          )
+          ),
+          Text("Contact")
         ],
       ),
     );
