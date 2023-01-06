@@ -34,8 +34,10 @@ class _CreateContactState extends State<CreateContact> {
                         print(firstName.text.trim() != "");
                         print(phone.text.trim() != "");
                         setState(() {
-                          if (firstName.text.trim().isNotEmpty &&
-                              phone.text.isNotEmpty) {
+                          if ((firstName.text.trim().isNotEmpty &&
+                                  firstName.text.trim() != "") &&
+                              (phone.text.trim().isNotEmpty &&
+                                  phone.text.trim() != "")) {
                             contacts.add(
                               Contact(
                                 firstName: firstName.text,
