@@ -91,10 +91,7 @@ class _HomePageState extends State<HomePage> {
                                   fontSize: 10.sp,
                                 ),
                               ),
-                              Text(
-                                contacts[index].phoneNumber,
-                                
-                              ),
+                              Text(contacts[index].phoneNumber),
                             ],
                           )
                         : Text(contacts[index].phoneNumber),
