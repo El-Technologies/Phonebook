@@ -60,7 +60,8 @@ class _CreateContactState extends State<CreateContact> {
                     ),
                     SizedBox(height: 20.h),
                     const CustomField(
-                      hintText: " name",
+                      icon: Icon(Icons.phone),
+                      hintText: "Phone",
                     ),
                   ],
                 ),
@@ -94,7 +95,7 @@ class _CustomFieldState extends State<CustomField> {
       decoration: InputDecoration(
         icon: widget.icon != null
             ? Icon(
-                Icons.person_outlined,
+                widget.icon,
                 size: 20.sp,
               )
             : SizedBox(
