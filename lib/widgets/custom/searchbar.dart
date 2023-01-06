@@ -40,9 +40,9 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
                   color: Colors.blue,
                   shape: BoxShape.circle,
                 ),
-                child: Icon(
-                  Icons.search,
-                  color: ,
+                child: const Icon(
+                  Icons.search_rounded,
+                  color: Colors.white,
                 ),
               ),
             ),
