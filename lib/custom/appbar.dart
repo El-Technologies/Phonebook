@@ -5,29 +5,22 @@ class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
     super.key,
     required this.title,
+    this.trailing,
   });
 
-  final Widget leading;
   final String title;
-  final Widget trailing;
+  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(10.sp),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: trailing != null
+            ? MainAxisAlignment.spaceBetween
+            : MainAxisAlignment.center,
         children: [
-          Card(
-            shape: const CircleBorder(),
-            child: Container(
-              height: 40.w,
-              width: 40.w,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
           Text(
             title,
             style: TextStyle(
@@ -35,9 +28,7 @@ class CustomAppBar extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
-            width: 50.w,
-          )
+          trailing ?? const SizedBox(),
         ],
       ),
     );

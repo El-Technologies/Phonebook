@@ -13,14 +13,45 @@ class CreateContact extends StatefulWidget {
 }
 
 class _CreateContactState extends State<CreateContact> {
+  final TextEditingController firstName = TextEditingController();
+  final TextEditingController lastName = TextEditingController();
+  final TextEditingController phone = TextEditingController();
+  final TextEditingController email = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-            const CustomAppBar(
-              title: "Add Contact",
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const CloseButton(),
+                Expanded(
+                  child: CustomAppBar(
+                    title: "Add Contact",
+                    trailing: MaterialButton(
+                      onPressed: () {},
+                      child: Container(
+                        width: 70.w,
+                        padding: EdgeInsets.all(10.sp),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 21, 102, 168),
+                          borderRadius: BorderRadius.circular(20.r),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "Save",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 10.h),
             Expanded(
@@ -56,10 +87,12 @@ class _CreateContactState extends State<CreateContact> {
                         size: 20.sp,
                       ),
                       hintText: "First name",
+                      controller: firstName,
                     ),
                     SizedBox(height: 10.h),
-                    const CustomField(
+                    CustomField(
                       hintText: "Last name",
+                      controller: lastName,
                     ),
                     SizedBox(height: 20.h),
                     CustomField(
@@ -68,6 +101,7 @@ class _CreateContactState extends State<CreateContact> {
                         size: 20.sp,
                       ),
                       hintText: "Phone",
+                      controller: phone,
                     ),
                     SizedBox(height: 20.h),
                     CustomField(
@@ -76,6 +110,7 @@ class _CreateContactState extends State<CreateContact> {
                         size: 20.sp,
                       ),
                       hintText: "Email",
+                      controller: email,
                     ),
                   ],
                 ),
@@ -92,10 +127,12 @@ class CustomField extends StatefulWidget {
   const CustomField({
     super.key,
     required this.hintText,
+    required this.controller,
     this.icon,
   });
 
   final String hintText;
+  final TextEditingController controller;
   final Icon? icon;
 
   @override
