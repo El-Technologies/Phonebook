@@ -25,7 +25,18 @@ class _CustomAppBarState extends State<CustomAppBar> {
               ),
             ),
           ),
-          Text("Contact")
+          Text("Contact"),
+          Card(
+            shape: const CircleBorder(),
+            child: Container(
+              height: 50.w,
+              width: 50.w,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+              ),
+              child: Icon(),
+            ),
+          ),
         ],
       ),
     );
