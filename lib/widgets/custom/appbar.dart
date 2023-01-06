@@ -11,7 +11,14 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [Card()],
+      children: [
+        widget(
+          child: Card(
+            
+            color: Colors.black,
+          ),
+        ),
+      ],
     );
   }
 }
