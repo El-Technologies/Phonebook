@@ -52,7 +52,10 @@ class _CreateContactState extends State<CreateContact> {
                     SizedBox(height: 20.h),
                     TextField(
                       decoration: InputDecoration(
-                        icon: Icon(Icons.person_outlined),
+                        icon: Icon(
+                          Icons.person_outlined,
+                          size: 20.sp,
+                        ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.r),
                         ),
