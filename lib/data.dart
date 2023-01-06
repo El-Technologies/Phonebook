@@ -8,7 +8,7 @@ List<Contact> contacts = [
   Contact(firstName: "Josh", phoneNumber: "+2341234556799"),
   Contact(firstName: "Carie", phoneNumber: "+2341234556799"),
   Contact(firstName: "Zen", phoneNumber: "+2341234556799"),
-  Contact(firstName: "Aladin", phoneNumber: "+2341234556799"),
-  Contact(firstName: "Aladin", phoneNumber: "+2341234556799"),
-  Contact(firstName: "Aladin", phoneNumber: "+2341234556799"),
+  Contact(firstName: "Dominion", phoneNumber: "+2341234556799"),
+  Contact(firstName: "Derrick", phoneNumber: "+2341234556799"),
+  Contact(firstName: "Fred", phoneNumber: "+2341234556799"),
 ];
