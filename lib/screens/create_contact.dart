@@ -51,6 +51,7 @@ class _CreateContactState extends State<CreateContact> {
                     ),
                     SizedBox(height: 20.h),
                     const CustomField(
+                      icon: Icon(Icons.person_outline),
                       hintText: "First name",
                     ),
                   ],
@@ -83,10 +84,12 @@ class _CustomFieldState extends State<CustomField> {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        icon: icon ?? Icon(
-          Icons.person_outlined,
-          size: 20.sp,
-        ),
+        icon: widget.icon != null
+            ? Icon(
+                Icons.person_outlined,
+                size: 20.sp,
+              )
+            : null,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.r),
         ),
