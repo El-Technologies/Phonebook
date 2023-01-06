@@ -11,7 +11,9 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      decoration: InputDecoration,
+      decoration: InputDecoration(
+        
+      ),
     );
   }
 }
