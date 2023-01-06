@@ -14,16 +14,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
-      builder: (context,  child) {  },
-      child: MaterialApp(
-        title: 'El Phonebook',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          fontFamily: "Poppins",
-        ),
-        home: const HomePage(),
-        debugShowCheckedModeBanner: false,
-      ),
+      builder: (context, child) {
+        return MaterialApp(
+          title: 'El Phonebook',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            fontFamily: "Poppins",
+          ),
+          home: const HomePage(),
+          debugShowCheckedModeBanner: false,
+        );
+      },
     );
   }
 }

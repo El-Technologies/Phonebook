@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatefulWidget {
   const CustomAppBar({super.key});
@@ -11,12 +12,12 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(10.sp),
       child: Row(
         children: [
           Container(
-            height: 50,
-            width: 50,
+            height: 50.w,
+            width: 50.w,
             decoration: const BoxDecoration(
               color: Colors.blue,
               shape: BoxShape.circle,
