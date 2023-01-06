@@ -77,7 +77,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                         "${contacts[index].firstName} ${contacts[index].lastName ??= ""}"),
-                    subtitle: Column(
+                    subtitle: contacts[index].email != null ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(contacts[index].email ??= ""),
                         Text(contacts[index].phoneNumber),
