@@ -13,8 +13,8 @@ class _CustomAppBarState extends State<CustomAppBar> {
     return Row(
       children: [
         Container(
-          height: 20,
-          width: 20,
+          height: 50,
+          width: 50,
           decoration: const BoxDecoration(
             color: Colors.blue,
             shape: BoxShape.circle,
