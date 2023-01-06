@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:phonebook/widgets/custom/searchbar.dart';
 
+import 'data.dart';
 import 'widgets/custom/appbar.dart';
 
 void main() {
@@ -56,9 +57,12 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10.h),
             const CustomSearchBar(),
             SizedBox(height: 10.h),
-            ListView.builder(itemBuilder: (context, index) {
-              return ListTile();
-            })
+            ListView.builder(
+              itemCount: contacts.length,
+              itemBuilder: (context, index) {
+                return ListTile();
+              },
+            )
           ],
         ),
       ),
