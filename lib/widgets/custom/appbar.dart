@@ -14,6 +14,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
     return Padding(
       padding: EdgeInsets.all(10.sp),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Card(
             shape: const CircleBorder(),
@@ -25,7 +26,10 @@ class _CustomAppBarState extends State<CustomAppBar> {
               ),
             ),
           ),
-          Text("Contact"),
+          Text(
+            "Contact",
+            
+          ),
           Card(
             shape: const CircleBorder(),
             child: Container(
