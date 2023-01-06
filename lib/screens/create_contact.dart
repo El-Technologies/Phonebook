@@ -93,14 +93,10 @@ class _CustomFieldState extends State<CustomField> {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        icon: widget.icon != null
-            ? Icon(
-                widget.icon,
-                size: 20.sp,
-              )
-            : SizedBox(
-                width: 20.w,
-              ),
+        icon: widget.icon ??
+            SizedBox(
+              width: 20.w,
+            ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.r),
         ),
