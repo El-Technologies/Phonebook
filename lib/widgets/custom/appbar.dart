@@ -19,8 +19,8 @@ class _CustomAppBarState extends State<CustomAppBar> {
           Card(
             shape: const CircleBorder(),
             child: Container(
-              height: 50.w,
-              width: 50.w,
+              height: 40.w,
+              width: 40.w,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
@@ -29,14 +29,15 @@ class _CustomAppBarState extends State<CustomAppBar> {
           Text(
             "Contact",
             style: TextStyle(
-              fontSize: 20.sp,
+              fontSize: 25.sp,
+              fontWeight: FontWeight.bold,
             ),
           ),
           Card(
             shape: const CircleBorder(),
             child: Container(
-              height: 50.w,
-              width: 50.w,
+              height: 40.w,
+              width: 40.w,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
               ),
