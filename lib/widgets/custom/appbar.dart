@@ -16,8 +16,8 @@ class _CustomAppBarState extends State<CustomAppBar> {
           height: 20,
           width: 20,
           decoration: const BoxDecoration(
+            color: Colors.blue,
             shape: BoxShape.circle,
-
           ),
         )
       ],
