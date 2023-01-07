@@ -49,10 +49,14 @@ class _CreateContactState extends State<CreateContact> {
                                 email: email.text,
                               ),
                             );
-                            Navigator.of(context).pop();
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomePage(),
+                              ),
+                            );
                             contacts.sort(
                                 (a, b) => a.firstName.compareTo(b.firstName));
-                            
                           }
                         });
                       },
