@@ -110,6 +110,7 @@ class _HomePageState extends State<HomePage> {
               child: ListView.builder(
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
+                  Contact newContact = _searchResults[index];
                   return ListTile(
                     leading: Card(
                       shape: const CircleBorder(),
