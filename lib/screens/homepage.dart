@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const CreateContact(),
+              builder: (context) => const CreateContact(contacts: contacts),
             ),
           );
         },
