@@ -13,7 +13,7 @@ git add .
 
 echo.
 echo Adding commits...
-git commit -m "commit"
+git commit --date "2 days ago" -m "commit"
 echo Added commits successfully
 
 echo.
