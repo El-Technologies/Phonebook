@@ -5,9 +5,9 @@ import 'package:phonebook/custom/appbar.dart';
 import 'package:phonebook/data.dart';
 
 class CreateContact extends StatefulWidget {
-  const CreateContact({super.key, required this.contact});
+  const CreateContact({super.key, required this.contacts});
 
-  final List<Contact> contact;
+  final List<Contact> contacts;
 
   @override
   State<CreateContact> createState() => _CreateContactState();
