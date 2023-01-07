@@ -1,96 +1,69 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/contact.dart';
 import 'package:phonebook/custom/appbar.dart';
 import 'package:phonebook/custom/searchbar.dart';
 import 'package:phonebook/data.dart';
 import 'package:phonebook/screens/create_contact.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+  // Add a search controller to control the TextField
+  final TextEditingController _searchController = TextEditingController();
+
+  // Add a list to store the search results
+  List<Contact> _searchResults = [];
+
   @override
   Widget build(BuildContext context) {
-    contacts.sort((a, b) => a.firstName.compareTo(b.firstName));
     return Scaffold(
+      body: Column(
+        children: [
+          // Add the TextField to allow the user to enter a search query
+          TextField(
+            controller: _searchController,
+            onChanged: (value) {
+              // Use the search query to filter the contacts
+              setState(() {
+                _searchResults = contacts
+                    .where((contact) => contact.firstName
+                        .toLowerCase()
+                        .contains(value.toLowerCase()))
+                    .toList();
+              });
+            },
+          ),
+          // Add the ListView.builder to display the search results
+          Expanded(
+            child: ListView.builder(
+              itemCount: _searchResults.length,
+              itemBuilder: (context, index) {
+                Contact contact = _searchResults[index];
+                return ListTile(
+                  title: Text(contact.firstName),
+                  subtitle: Text(contact.phoneNumber),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => CreateContact(contacts: contacts,),
+              builder: (context) => const CreateContact(contacts: contacts,),
             ),
           );
         },
         child: Icon(
           Icons.add,
           size: 20.sp,
-        ),
-      ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            CustomAppBar(
-              title: "Contacts",
-              trailing: Card(
-                shape: const CircleBorder(),
-                child: Container(
-                  height: 40.w,
-                  width: 40.w,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: 10.h),
-            const CustomSearchBar(),
-            SizedBox(height: 10.h),
-            Expanded(
-              child: ListView.builder(
-                itemCount: contacts.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: Card(
-                      shape: const CircleBorder(),
-                      child: Container(
-                        height: 40.w,
-                        width: 40.w,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                        ),
-                      ),
-                    ),
-                    title: Text(
-                      "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: contacts[index].email != null &&
-                            contacts[index].email?.trim() != ""
-                        ? Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                contacts[index].email!,
-                                style: TextStyle(
-                                  fontSize: 10.sp,
-                                ),
-                              ),
-                              Text(contacts[index].phoneNumber),
-                            ],
-                          )
-                        : Text(contacts[index].phoneNumber),
-                  );
-                },
-              ),
-            )
-          ],
         ),
       ),
     );
