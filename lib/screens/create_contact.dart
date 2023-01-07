@@ -53,7 +53,7 @@ class _CreateContactState extends State<CreateContact> {
                                 (a, b) => a.firstName.compareTo(b.firstName));
                             Navigator.pushNamedAndRemoveUntil(
                               context,
-                              '/Homepage',
+                              '/homepage',
                               (route) => false,
                             );
                           }

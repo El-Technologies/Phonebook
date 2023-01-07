@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
             fontFamily: "Poppins",
           ),
+          routes: {
+            '/homepage': (context) => const HomePage(),
+          },
           home: const HomePage(),
           debugShowCheckedModeBanner: false,
         );
