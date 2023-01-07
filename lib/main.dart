@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
             fontFamily: "Poppins",
           ),
           routes: {
-            '/homepage': (context) => const HomePage(),
+            '/homepage': (context) => HomePage(),
           },
-          home: const HomePage(),
+          home: HomePage(),
           debugShowCheckedModeBanner: false,
         );
       },
