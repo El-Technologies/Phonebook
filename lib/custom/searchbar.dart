@@ -9,6 +9,8 @@ class CustomSearchBar extends StatefulWidget {
 }
 
 class _CustomSearchBarState extends State<CustomSearchBar> {
+  final TextEditingController _searchController;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,6 +21,17 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
           clipBehavior: Clip.none,
           children: [
             TextField(
+              controller: _searchController,
+              onChanged: (value) {
+                // Use the search query to filter the contacts
+                setState(() {
+                  _searchResults = contacts
+                      .where((contact) => contact.firstName
+                          .toLowerCase()
+                          .contains(value.toLowerCase()))
+                      .toList();
+                });
+              },
               decoration: InputDecoration(
                 hintText: "Search",
                 border: OutlineInputBorder(
