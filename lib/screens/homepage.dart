@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController _searchController = TextEditingController();
 
-  List<Contact>? _searchResults = [];
+  List<Contact> _searchResults = [];
   @override
   Widget build(BuildContext context) {
     contacts.sort((a, b) => a.firstName.compareTo(b.firstName));
@@ -110,7 +110,6 @@ class _HomePageState extends State<HomePage> {
               child: ListView.builder(
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
-                  Contact newContact = _searchResults[index];
                   return ListTile(
                     leading: Card(
                       shape: const CircleBorder(),
@@ -123,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     title: Text(
-                      "${newContact ?? contacts[index].firstName} ${contacts[index].lastName ??= ""}",
+                      "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
