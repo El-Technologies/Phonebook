@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:phonebook/contact.dart';
 import 'package:phonebook/custom/appbar.dart';
 import 'package:phonebook/data.dart';
+import 'package:phonebook/screens/homepage.dart';
 
 class CreateContact extends StatefulWidget {
   const CreateContact({super.key, required this.contacts});
@@ -51,6 +52,7 @@ class _CreateContactState extends State<CreateContact> {
                             Navigator.of(context).pop();
                             contacts.sort(
                                 (a, b) => a.firstName.compareTo(b.firstName));
+                            _Hom
                           }
                         });
                       },
