@@ -33,6 +33,7 @@ class _CreateContactState extends State<CreateContact> {
                     title: "Add Contact",
                     trailing: MaterialButton(
                       onPressed: () {
+                        widget.contacts.add(newContact);
                         print(firstName.text.trim() != "");
                         print(phone.text.trim() != "");
                         setState(() {
