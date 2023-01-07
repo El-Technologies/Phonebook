@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController _searchController = TextEditingController();
 
-  List<Contact> _searchResults = [];
+  List<Contact>? _searchResults = [];
   @override
   Widget build(BuildContext context) {
     contacts.sort((a, b) => a.firstName.compareTo(b.firstName));
@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     title: Text(
-                      "${newContact[index].firstName} ${contacts[index].lastName ??= ""}",
+                      "${newContact ?? contacts[index].firstName} ${contacts[index].lastName ??= ""}",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
