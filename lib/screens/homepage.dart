@@ -26,7 +26,9 @@ class _HomePageState extends State<HomePage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => CreateContact(contacts: contacts,),
+              builder: (context) => CreateContact(
+                contacts: contacts,
+              ),
             ),
           );
         },
@@ -52,7 +54,57 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: 10.h),
-            const CustomSearchBar(),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: SizedBox(
+                height: 50,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    TextField(
+                      controller: _searchController,
+                      onChanged: (value) {
+                        // Use the search query to filter the contacts
+                        setState(() {
+                          _searchResults = contacts
+                              .where((contact) => contact.firstName
+                                  .toLowerCase()
+                                  .contains(value.toLowerCase()))
+                              .toList();
+                        });
+                      },
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        border: OutlineInputBorder(
+                            borderSide: BorderSide.none,
+                            borderRadius: BorderRadius.circular(30.r)),
+                        fillColor: const Color.fromARGB(255, 230, 228, 228),
+                        filled: true,
+                        contentPadding: EdgeInsets.symmetric(
+                          horizontal: 17.77.h,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: 5,
+                      top: 5,
+                      child: Container(
+                        width: 35.w,
+                        height: 35.w,
+                        decoration: const BoxDecoration(
+                          color: Colors.blue,
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.search_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             SizedBox(height: 10.h),
             Expanded(
               child: ListView.builder(
