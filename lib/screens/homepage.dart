@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:phonebook/contact.dart';
 import 'package:phonebook/custom/appbar.dart';
 import 'package:phonebook/custom/searchbar.dart';
 import 'package:phonebook/data.dart';
@@ -93,70 +92,6 @@ class _HomePageState extends State<HomePage> {
             )
           ],
         ),
-      ),
-    );
-  }
-}
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  // Add a state variable to store the search query
-  String _searchQuery;
-
-  @override
-  Widget build(BuildContext context) {
-    // Filter the list of contacts based on the search query
-    List<Contact> filteredContacts = contacts.where((contact) {
-      if (_searchQuery == null || _searchQuery.isEmpty) {
-        return true;
-      }
-      return contact.firstName
-              .toLowerCase()
-              .contains(_searchQuery.toLowerCase()) ||
-          contact.lastName!.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          contact.phoneNumber
-              .toLowerCase()
-              .contains(_searchQuery.toLowerCase()) ||
-          contact.email!.toLowerCase().contains(_searchQuery.toLowerCase());
-    }).toList();
-
-    return Scaffold(
-      appBar: AppBar(
-        // Add a TextField widget to the app bar to allow the user to enter the search query
-        title: TextField(
-          onChanged: (value) {
-            // Update the search query state variable
-            setState(() {
-              _searchQuery = value;
-            });
-          },
-          style: TextStyle(
-            color: Colors.white,
-          ),
-          decoration: InputDecoration(
-            hintText: "Search...",
-            hintStyle: TextStyle(
-              color: Colors.white54,
-            ),
-            border: InputBorder.none,
-          ),
-        ),
-      ),
-      // Use the filtered list of contacts to build the list view
-      body: ListView.builder(
-        itemCount: filteredContacts.length,
-        itemBuilder: (context, index) {
-          Contact contact = filteredContacts[index];
-          return ListTile(
-            title: Text(contact.firstName),
-            // Other properties of the ListTile widget
-          );
-        },
       ),
     );
   }
