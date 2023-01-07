@@ -63,16 +63,6 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     TextField(
                       controller: _searchController,
-                      onChanged: (value) {
-                        // Use the search query to filter the contacts
-                        setState(() {
-                          _searchResults = contacts
-                              .where((contact) => contact.firstName
-                                  .toLowerCase()
-                                  .contains(value.toLowerCase()))
-                              .toList();
-                        });
-                      },
                       decoration: InputDecoration(
                         hintText: "Search",
                         border: OutlineInputBorder(
