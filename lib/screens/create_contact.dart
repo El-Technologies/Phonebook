@@ -51,11 +51,10 @@ class _CreateContactState extends State<CreateContact> {
                             );
                             contacts.sort(
                                 (a, b) => a.firstName.compareTo(b.firstName));
-                            Navigator.pushReplacement(
+                            Navigator.pushNamedAndRemoveUntil(
                               context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomePage(),
-                              ),
+                              '/Homepage',
+                              (route) => false,
                             );
                           }
                         });
