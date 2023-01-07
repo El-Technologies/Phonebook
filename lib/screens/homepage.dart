@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     title: Text(
-                      "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
+                      "${newContact[index].firstName} ${contacts[index].lastName ??= ""}",
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
