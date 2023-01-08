@@ -58,7 +58,12 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
-                      
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ViewContact(),
+                        ),
+                      )
                     },
                     child: ListTile(
                       leading: Card(
