@@ -56,7 +56,7 @@ class _ViewContactState extends State<ViewContact> {
               ),
             ),
             SizedBox(height: 20.h),
-            Text(widget.contact.firstName + " ")
+            Text("${widget.contact.firstName}${widget.contact.lastName}")
           ],
         ),
       ),
