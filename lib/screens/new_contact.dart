@@ -6,7 +6,7 @@ import 'package:phonebook/custom/appbar.dart';
 class ViewContact extends StatefulWidget {
   const ViewContact({
     super.key,
-    this.contact,
+    required this.contact,
   });
 
   final Contact contact;
@@ -55,6 +55,8 @@ class _ViewContactState extends State<ViewContact> {
                 shape: BoxShape.circle,
               ),
             ),
+            SizedBox(height: 10.h),
+            Text(widget.contact.firstName)
           ],
         ),
       ),
