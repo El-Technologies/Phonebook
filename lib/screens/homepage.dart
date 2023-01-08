@@ -56,38 +56,40 @@ class _HomePageState extends State<HomePage> {
               child: ListView.builder(
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: Card(
-                      shape: const CircleBorder(),
-                      child: Container(
-                        height: 40.w,
-                        width: 40.w,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
+                  return GestureDetector(
+                    child: ListTile(
+                      leading: Card(
+                        shape: const CircleBorder(),
+                        child: Container(
+                          height: 40.w,
+                          width: 40.w,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                          ),
                         ),
                       ),
-                    ),
-                    title: Text(
-                      "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
+                      title: Text(
+                        "${contacts[index].firstName} ${contacts[index].lastName ??= ""}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    subtitle: contacts[index].email != null &&
-                            contacts[index].email?.trim() != ""
-                        ? Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                contacts[index].email!,
-                                style: TextStyle(
-                                  fontSize: 10.sp,
+                      subtitle: contacts[index].email != null &&
+                              contacts[index].email?.trim() != ""
+                          ? Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  contacts[index].email!,
+                                  style: TextStyle(
+                                    fontSize: 10.sp,
+                                  ),
                                 ),
-                              ),
-                              Text(contacts[index].phoneNumber),
-                            ],
-                          )
-                        : Text(contacts[index].phoneNumber),
+                                Text(contacts[index].phoneNumber),
+                              ],
+                            )
+                          : Text(contacts[index].phoneNumber),
+                    ),
                   );
                 },
               ),
