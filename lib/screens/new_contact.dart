@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:phonebook/custom/appbar.dart';
 
 class ViewContact extends StatefulWidget {
-  const ViewContact({super.key});
+  const ViewContact({
+    super.key,
+  });
 
   @override
   State<ViewContact> createState() => _ViewContactState();
@@ -41,14 +43,12 @@ class _ViewContactState extends State<ViewContact> {
               ),
             ),
             SizedBox(height: 30.h),
-            Card(
-              shape: const CircleBorder(),
-              child: Container(
-                height: 120.w,
-                width: 120.w,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                ),
+            Container(
+              height: 120.w,
+              width: 120.w,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
               ),
             ),
           ],
