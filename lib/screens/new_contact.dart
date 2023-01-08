@@ -44,12 +44,11 @@ class _ViewContactState extends State<ViewContact> {
             Card(
               shape: const CircleBorder(),
               child: Container(
-                height: 40.w,
-                width: 40.w,
+                height: 120.w,
+                width: 120.w,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                 ),
-                child: Icon(Icons.more_horiz_rounded),
               ),
             ),
           ],
