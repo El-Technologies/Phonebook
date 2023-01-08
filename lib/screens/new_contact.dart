@@ -26,6 +26,7 @@ class _ViewContactState extends State<ViewContact> {
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
+                  child: Icon(Icons.more_horiz_rounded),
                 ),
               ),
             )
