@@ -31,7 +31,13 @@ class _CreateContactState extends State<CreateContact> {
                 const CloseButton(),
                 Expanded(
                   child: CustomAppBar(
-                    title: "Add Contact",
+                    title: Text(
+                      "Add Contact",
+                      style: TextStyle(
+                        fontSize: 25.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     trailing: MaterialButton(
                       onPressed: () {
                         print(firstName.text.trim() != "");
