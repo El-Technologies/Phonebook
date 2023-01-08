@@ -57,6 +57,9 @@ class _HomePageState extends State<HomePage> {
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
+                    onTap: () {
+                      
+                    },
                     child: ListTile(
                       leading: Card(
                         shape: const CircleBorder(),
