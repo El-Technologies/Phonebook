@@ -13,7 +13,9 @@ class _ViewContactState extends State<ViewContact> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            
+          ],
         ),
       ),
     );
