@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
     this.trailing,
   });
 
-  final String title;
+  final Widget? title;
   final Widget? trailing;
 
   @override
@@ -21,6 +21,7 @@ class CustomAppBar extends StatelessWidget {
             ? MainAxisAlignment.spaceBetween
             : MainAxisAlignment.center,
         children: [
+          title.
           Text(
             title,
             style: TextStyle(
