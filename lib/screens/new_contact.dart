@@ -23,11 +23,10 @@ class _ViewContactState extends State<ViewContact> {
                 child: Container(
                   height: 40.w,
                   width: 40.w,
-                  padding: EdgeInsets.all(.sp),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
-                  child: Image.asset("assets/images/more.png"),
+                  child: Icon(Icons.more_horiz_rounded),
                 ),
               ),
             )
