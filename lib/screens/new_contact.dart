@@ -17,11 +17,15 @@ class _ViewContactState extends State<ViewContact> {
         child: Column(
           children: [
             CustomAppBar(
-              title: Text(
-                "",
-                style: TextStyle(
-                  fontSize: 25.sp,
-                  fontWeight: FontWeight.bold,
+              title: Card(
+                shape: const CircleBorder(),
+                child: Container(
+                  height: 40.w,
+                  width: 40.w,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(Icons.bac),
                 ),
               ),
               trailing: Card(
