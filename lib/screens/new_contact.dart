@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class ViewContact extends StatefulWidget {
+  const ViewContact({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<ViewContact> createState() => _ViewContactState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ViewContactState extends State<ViewContact> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }

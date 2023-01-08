@@ -5,6 +5,8 @@ import 'package:phonebook/custom/searchbar.dart';
 import 'package:phonebook/data.dart';
 import 'package:phonebook/screens/create_contact.dart';
 
+import 'new_contact.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -63,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                         MaterialPageRoute(
                           builder: (context) => const ViewContact(),
                         ),
-                      )
+                      );
                     },
                     child: ListTile(
                       leading: Card(
