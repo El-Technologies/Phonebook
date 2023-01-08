@@ -25,7 +25,7 @@ class _ViewContactState extends State<ViewContact> {
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(Icons.bac),
+                  child: const BackButton(),
                 ),
               ),
               trailing: Card(
