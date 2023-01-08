@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const ViewContact(),
+                          builder: (context) => const ViewContact(contacts[index]),
                         ),
                       );
                     },

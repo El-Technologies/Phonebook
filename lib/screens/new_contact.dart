@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/contact.dart';
 import 'package:phonebook/custom/appbar.dart';
 
 class ViewContact extends StatefulWidget {
   const ViewContact({
     super.key,
+    this.contact,
   });
+
+  final Contact contact;
 
   @override
   State<ViewContact> createState() => _ViewContactState();
