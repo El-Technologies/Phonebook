@@ -39,7 +39,19 @@ class _ViewContactState extends State<ViewContact> {
                   child: Icon(Icons.more_horiz_rounded),
                 ),
               ),
-            )
+            ),
+            SizedBox(height: 30.h),
+            Card(
+              shape: const CircleBorder(),
+              child: Container(
+                height: 40.w,
+                width: 40.w,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.more_horiz_rounded),
+              ),
+            ),
           ],
         ),
       ),
