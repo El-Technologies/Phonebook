@@ -21,14 +21,7 @@ class CustomAppBar extends StatelessWidget {
             ? MainAxisAlignment.spaceBetween
             : MainAxisAlignment.center,
         children: [
-          title.
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 25.sp,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          title ?? const SizedBox(),
           trailing ?? const SizedBox(),
         ],
       ),
