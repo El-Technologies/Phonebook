@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:phonebook/custom/appbar.dart';
 
 class ViewContact extends StatefulWidget {
   const ViewContact({super.key});
@@ -14,7 +16,19 @@ class _ViewContactState extends State<ViewContact> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            CustomAppBar(
+              title: "",
+              trailing: Card(
+                shape: const CircleBorder(),
+                child: Container(
+                  height: 40.w,
+                  width: 40.w,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
