@@ -55,8 +55,8 @@ class _ViewContactState extends State<ViewContact> {
                 shape: BoxShape.circle,
               ),
             ),
-            SizedBox(height: 10.h),
-            Text(widget.contact.firstName)
+            SizedBox(height: 20.h),
+            Text(widget.contact.firstName + " ")
           ],
         ),
       ),
