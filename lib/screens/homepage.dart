@@ -39,7 +39,13 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             CustomAppBar(
-              title: "Contacts",
+              title: Text(
+                "Contacts",
+                style: TextStyle(
+                  fontSize: 25.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               trailing: Card(
                 shape: const CircleBorder(),
                 child: Container(

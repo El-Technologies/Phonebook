@@ -17,7 +17,13 @@ class _ViewContactState extends State<ViewContact> {
         child: Column(
           children: [
             CustomAppBar(
-              title: "",
+              title: Text(
+                "",
+                style: TextStyle(
+                  fontSize: 25.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               trailing: Card(
                 shape: const CircleBorder(),
                 child: Container(
