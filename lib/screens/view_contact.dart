@@ -16,7 +16,6 @@ class ViewContact extends StatefulWidget {
 }
 
 class _ViewContactState extends State<ViewContact> {
-  final controller = TabController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
