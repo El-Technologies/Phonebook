@@ -63,13 +63,16 @@ class _ViewContactState extends State<ViewContact> {
                 : const SizedBox(),
             SizedBox(height: 20.h),
             Expanded(
-                child: const DefaultTabController(
-              length: 2,
-              child: TabBar(
-                tabs: [
-                  Tab(icon: Icon(Icons.home)),
-                  Tab(icon: Icon(Icons.phone)),
-                ],
+                child: Container(
+              color: Colors.amber,
+              child: DefaultTabController(
+                length: 2,
+                child: TabBar(
+                  tabs: [
+                    Tab(icon: Icon(Icons.home)),
+                    Tab(icon: Icon(Icons.phone)),
+                  ],
+                ),
               ),
             ))
           ],
