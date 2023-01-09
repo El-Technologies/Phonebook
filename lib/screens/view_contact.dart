@@ -61,7 +61,8 @@ class _ViewContactState extends State<ViewContact> {
             (widget.contact.email != "" && widget.contact.email != null)
                 ? Text(widget.contact.email ?? "")
                 : const SizedBox(),
-                
+            SizedBox(height: 20.h),
+            
           ],
         ),
       ),
