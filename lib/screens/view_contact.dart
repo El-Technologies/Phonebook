@@ -62,7 +62,11 @@ class _ViewContactState extends State<ViewContact> {
                 ? Text(widget.contact.email ?? "")
                 : const SizedBox(),
             SizedBox(height: 20.h),
-            Expanded(child: Tab)
+            Expanded(
+                child: TabBar(
+                  controller: ,
+              tabs: [],
+            ))
           ],
         ),
       ),
