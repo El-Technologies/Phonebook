@@ -18,31 +18,69 @@ class ViewContact extends StatefulWidget {
 class _ViewContactState extends State<ViewContact> {
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 3,
-      child: Scaffold(
-        appBar: AppBar(
-          bottom: TabBar(
-            tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-            ],
-          ),
-          title: Text('Tabs Demo'),
-        ),
-        body: Expanded(
-          child: Column(
-            children: [
-              TabBarView(
-                children: [
-                  Icon(Icons.flight, size: 350),
-                  Icon(Icons.directions_transit, size: 350),
-                  Icon(Icons.directions_car, size: 350),
-                ],
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            CustomAppBar(
+              title: Card(
+                shape: const CircleBorder(),
+                child: Container(
+                  height: 40.w,
+                  width: 40.w,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: const BackButton(),
+                ),
               ),
-            ],
-          ),
+              trailing: Card(
+                shape: const CircleBorder(),
+                child: Container(
+                  height: 40.w,
+                  width: 40.w,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(Icons.more_horiz_rounded),
+                ),
+              ),
+            ),
+            SizedBox(height: 30.h),
+            Container(
+              height: 120.w,
+              width: 120.w,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+              ),
+            ),
+            SizedBox(height: 20.h),
+            Text(
+                "${widget.contact.firstName}${widget.contact.lastName != "" ? " ${widget.contact.lastName}" : ""}"),
+            (widget.contact.email != "" && widget.contact.email != null)
+                ? Text(widget.contact.email ?? "")
+                : const SizedBox(),
+            SizedBox(height: 20.h),
+            Expanded(
+              child: Container(
+                color: Colors.amber,
+                child: DefaultTabController(
+                  length: 2,
+                  child: TabBar(
+                    tabs: [
+                      Tab(
+                        text: "Details",
+                      ),
+                      Tab(
+                        text: "History",
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );
