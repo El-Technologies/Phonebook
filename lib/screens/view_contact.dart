@@ -71,8 +71,14 @@ class _ViewContactState extends State<ViewContact> {
                   tabs: [
                     Tab(
                       text: "Details",
+                      child: Scaffold(
+                          body: Container(
+                        color: Colors.green,
+                      )),
                     ),
-                    Tab(icon: Icon(Icons.phone)),
+                    Tab(
+                      text: "History",
+                    ),
                   ],
                 ),
               ),
