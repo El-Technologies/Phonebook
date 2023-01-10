@@ -79,7 +79,7 @@ class _ViewContactState extends State<ViewContact> {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
