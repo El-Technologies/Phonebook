@@ -69,7 +69,7 @@ class _ViewContactState extends State<ViewContact> {
                 length: 2,
                 child: TabBar(
                   tabs: [
-                    Tab(icon: Icon(Icons.home)),
+                    Tab(text:,),
                     Tab(icon: Icon(Icons.phone)),
                   ],
                 ),
