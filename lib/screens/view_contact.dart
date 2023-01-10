@@ -65,7 +65,7 @@ class _ViewContactState extends State<ViewContact> {
             Expanded(
               child: Container(
                 color: Colors.amber,
-                child: DefaultTabController(
+                child: const DefaultTabController(
                   length: 2,
                   child: TabBar(
                     tabs: [
