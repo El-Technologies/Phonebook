@@ -71,6 +71,7 @@ class _ViewContactState extends State<ViewContact> {
                   tabs: [
                     Tab(
                       text: "Details",
+                      
                     ),
                     Tab(
                       text: "History",
