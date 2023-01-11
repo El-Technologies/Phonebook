@@ -82,7 +82,9 @@ class _ViewContactState extends State<ViewContact> {
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     child: Center(
-                      child: Text("Details"),
+                      child: Text(
+                        "Details",
+                      ),
                     ),
                   )
                 ],
