@@ -133,7 +133,7 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        
+        trailing,
       ],
     );
   }
