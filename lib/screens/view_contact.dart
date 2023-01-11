@@ -104,6 +104,7 @@ class _ViewContactState extends State<ViewContact> {
               ),
             ),
             SizedBox(height: 20.h),
+            Detail(title: title, subtitle: subtitle, trailing: trailing)
           ],
         ),
       ),
