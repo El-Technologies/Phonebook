@@ -105,9 +105,10 @@ class _ViewContactState extends State<ViewContact> {
             ),
             SizedBox(height: 20.h),
             Detail(
-                title: "Phone Number",
-                subtitle: widget.contact.phoneNumber,
-                trailing: trailing)
+              title: "Phone Number",
+              subtitle: widget.contact.phoneNumber,
+              trailing: trailing,
+            )
           ],
         ),
       ),
