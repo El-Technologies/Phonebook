@@ -129,7 +129,10 @@ class Detail extends StatelessWidget {
       children: [
         Column(
           children: [
-            Text(title),
+            Text(
+              title,
+              stu
+            ),
             Text(subtitle),
           ],
         ),
