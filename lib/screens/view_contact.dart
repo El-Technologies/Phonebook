@@ -81,9 +81,12 @@ class _ViewContactState extends State<ViewContact> {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(30.r),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Details",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
