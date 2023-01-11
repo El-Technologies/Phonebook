@@ -107,7 +107,9 @@ class _ViewContactState extends State<ViewContact> {
             Detail(
               title: "Phone Number",
               subtitle: widget.contact.phoneNumber,
-              trailing: trailing,
+              trailing: Container(
+                
+              ),
             )
           ],
         ),
