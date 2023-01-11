@@ -152,3 +152,4 @@ class Detail extends StatelessWidget {
     );
   }
 }
+
