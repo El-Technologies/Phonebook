@@ -117,7 +117,9 @@ class Detail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column()
+        Column(
+          children: [],
+        ),
       ],
     );
   }
