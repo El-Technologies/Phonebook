@@ -119,6 +119,7 @@ class Detail extends StatelessWidget {
 
   final String field;
   final String info;
+  final Widget trailing;
 
   @override
   Widget build(BuildContext context) {
@@ -126,12 +127,8 @@ class Detail extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
-          children: [
-            Text(field),
-            Text(info)
-          ],
+          children: [Text(field), Text(info)],
         ),
-        
       ],
     );
   }
