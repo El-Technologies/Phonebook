@@ -111,7 +111,12 @@ class _ViewContactState extends State<ViewContact> {
 }
 
 class Detail extends StatelessWidget {
-  const Detail({super.key});
+  const Detail({
+    super.key,
+  });
+
+  final String key;
+  final String info;
 
   @override
   Widget build(BuildContext context) {
