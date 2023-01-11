@@ -128,8 +128,12 @@ class Detail extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
-          children: [Text(title), Text(subtitle)],
+          children: [
+            Text(title),
+            Text(subtitle),
+          ],
         ),
+        
       ],
     );
   }
