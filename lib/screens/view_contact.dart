@@ -74,6 +74,14 @@ class _ViewContactState extends State<ViewContact> {
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                   ),
+                  Container(
+                    width: 200.h,
+                    height: 40.h,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(30.r),
+                    ),
+                  )
                 ],
               ),
             )
