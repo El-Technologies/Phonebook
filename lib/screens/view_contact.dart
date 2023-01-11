@@ -75,7 +75,7 @@ class _ViewContactState extends State<ViewContact> {
                     ),
                   ),
                   Container(
-                    width: 200.h,
+                    width: 150.h,
                     height: 40.h,
                     decoration: BoxDecoration(
                       color: Colors.blue,
