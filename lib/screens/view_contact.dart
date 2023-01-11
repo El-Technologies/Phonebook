@@ -81,6 +81,9 @@ class _ViewContactState extends State<ViewContact> {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(30.r),
                     ),
+                    child: Center(
+                      child: Text("Details"),
+                    ),
                   )
                 ],
               ),
