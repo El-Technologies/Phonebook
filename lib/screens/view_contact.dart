@@ -62,18 +62,20 @@ class _ViewContactState extends State<ViewContact> {
                 ? Text(widget.contact.email ?? "")
                 : const SizedBox(),
             SizedBox(height: 20.h),
-            Stack(
-              children: [
-                Container(
-                  padding: EdgeInsets.all(20.sp),
-                  width: double.infinity,
-                  height: 30.h,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(30.r),
-                  ),
-                )
-              ],
+            Padding(
+              padding: EdgeInsets.all(10.sp),
+              child: Stack(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    height: 30.h,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(30.r),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
