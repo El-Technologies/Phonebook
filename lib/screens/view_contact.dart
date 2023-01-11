@@ -113,12 +113,13 @@ class _ViewContactState extends State<ViewContact> {
 class Detail extends StatelessWidget {
   const Detail({
     super.key,
-    required this.field,
-    required this.info,
+    required this.title,
+    required this.subtitle,
+    required this.trailing,
   });
 
-  final String field;
-  final String info;
+  final String title;
+  final String subtitle;
   final Widget trailing;
 
   @override
@@ -127,7 +128,7 @@ class Detail extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
-          children: [Text(field), Text(info)],
+          children: [Text(title), Text(subtitle)],
         ),
       ],
     );
