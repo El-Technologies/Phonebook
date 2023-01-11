@@ -69,9 +69,19 @@ class _ViewContactState extends State<ViewContact> {
                   Container(
                     width: 200.w,
                     height: 40.h,
+                    padding: EdgeInsets.only(right: 20),
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(30.r),
+                    ),
+                    child: const Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        "History",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                   Container(
