@@ -102,7 +102,8 @@ class _ViewContactState extends State<ViewContact> {
                   )
                 ],
               ),
-            )
+            ),
+            SizedBox(height: 20.h),
           ],
         ),
       ),
@@ -131,7 +132,10 @@ class Detail extends StatelessWidget {
           children: [
             Text(
               title,
-              stu
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 16.sp,
+              ),
             ),
             Text(subtitle),
           ],
