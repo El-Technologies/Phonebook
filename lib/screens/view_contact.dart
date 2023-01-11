@@ -113,6 +113,7 @@ class _ViewContactState extends State<ViewContact> {
 class Detail extends StatelessWidget {
   const Detail({
     super.key,
+    required this.
   });
 
   final String key;
