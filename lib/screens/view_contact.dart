@@ -105,7 +105,7 @@ class _ViewContactState extends State<ViewContact> {
             ),
             SizedBox(height: 20.h),
             Padding(
-              padding: const EdgeInsets.symmetric(8.0),
+              padding: EdgeInsets.symmetric(horizontal: 20.h),
               child: Detail(
                 title: "Phone Number",
                 subtitle: widget.contact.phoneNumber,
