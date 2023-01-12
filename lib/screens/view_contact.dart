@@ -147,9 +147,7 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        Container(
-          decoration: BoxDecoration(),
-        ),
+        TrailingIcon()
       ],
     );
   }
