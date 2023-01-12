@@ -171,7 +171,7 @@ class TrailingIcon extends StatelessWidget {
           width: 35.w,
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
-            color: Colors.yellow,
+            color: Colors.white,
           ),
         ),
         Positioned(
@@ -182,6 +182,7 @@ class TrailingIcon extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.blue,
             ),
+            child: Center,
           ),
         ),
       ],
