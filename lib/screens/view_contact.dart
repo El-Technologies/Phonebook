@@ -159,7 +159,7 @@ class TrailingIcon extends StatelessWidget {
     this.icon,
   });
 
-  final Icon? icon;
+  final Icons? icon;
 
   @override
   Widget build(BuildContext context) {
