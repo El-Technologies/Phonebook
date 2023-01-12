@@ -107,9 +107,7 @@ class _ViewContactState extends State<ViewContact> {
             Detail(
               title: "Phone Number",
               subtitle: widget.contact.phoneNumber,
-              trailingIcon: 
-                Icons.phone,
-              
+              trailingIcon: Icons.phone,
             )
           ],
         ),
@@ -185,7 +183,13 @@ class TrailingIcon extends StatelessWidget {
               color: Colors.blue,
             ),
             child: Center(
-              child: Icon(icon),
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Icon(
+                  icon,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
         ),
