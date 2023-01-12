@@ -164,7 +164,7 @@ class TrailingIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: ali,
+      alignment: Alignment.center,
       children: [
         Container(
           height: 35.w,
