@@ -147,7 +147,7 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        TrailingIcon(),
+        TrailingIcon(icon: ,),
       ],
     );
   }
@@ -159,7 +159,7 @@ class TrailingIcon extends StatelessWidget {
     this.icon,
   });
 
-  final Icons? icon;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -182,7 +182,9 @@ class TrailingIcon extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.blue,
             ),
-            child: Center,
+            child: Center(
+              child: Icon(icon),
+            ),
           ),
         ),
       ],
