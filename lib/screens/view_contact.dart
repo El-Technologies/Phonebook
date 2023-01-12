@@ -183,12 +183,10 @@ class TrailingIcon extends StatelessWidget {
               color: Colors.blue,
             ),
             child: Center(
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: Icon(
-                  icon,
-                  color: Colors.white,
-                ),
+              child: Icon(
+                icon,
+                color: Colors.white,
+                size: 17.sp,
               ),
             ),
           ),
