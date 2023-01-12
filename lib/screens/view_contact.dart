@@ -164,6 +164,7 @@ class TrailingIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      alignment: ali,
       children: [
         Container(
           height: 35.w,
@@ -171,6 +172,16 @@ class TrailingIcon extends StatelessWidget {
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.yellow,
+          ),
+        ),
+        Positioned(
+          child: Container(
+            height: 35.w,
+            width: 35.w,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.yellow,
+            ),
           ),
         ),
       ],
