@@ -156,14 +156,16 @@ class Detail extends StatelessWidget {
 class TrailingIcon extends StatelessWidget {
   const TrailingIcon({
     super.key,
+    this.icon,
   });
+
+  final Icon? icon;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
-        
       ),
     );
   }
