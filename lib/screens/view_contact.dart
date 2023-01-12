@@ -107,7 +107,7 @@ class _ViewContactState extends State<ViewContact> {
             Detail(
               title: "Phone Number",
               subtitle: widget.contact.phoneNumber,
-              trailing: const Icon(
+              trailingIcon: const Icon(
                 Icons.phone,
               ),
             )
@@ -123,12 +123,12 @@ class Detail extends StatelessWidget {
     super.key,
     required this.title,
     required this.subtitle,
-    required this.trailing,
+    required this.trailingIcon,
   });
 
   final String title;
   final String subtitle;
-  final Widget trailing;
+  final Widget trailingIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -147,7 +147,9 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        TrailingIcon(icon: ,),
+        TrailingIcon(
+          icon: trailingIcon,
+        ),
       ],
     );
   }
