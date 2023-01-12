@@ -26,8 +26,8 @@ class _ViewContactState extends State<ViewContact> {
               title: Card(
                 shape: const CircleBorder(),
                 child: Container(
-                  height: 40.w,
-                  width: 40.w,
+                  height: 35.w,
+                  width: 35.w,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
@@ -166,8 +166,8 @@ class TrailingIcon extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 30.w,
-          width: 30.w,
+          height: 35.w,
+          width: 35.w,
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.yellow,
