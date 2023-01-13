@@ -62,7 +62,16 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10.h),
             Expanded(
               child: ListView.builder(
-                itemCount: contacts.length,
+                itemCount: searchQuery.isEmpty
+                    ? contacts.length
+                    : contacts
+                        .where((contact) =>
+                            contact.firstName.contains(_searchQuery) ||
+                            contact.lastName.contains(_searchQuery) ||
+                            contact.email.contains(_searchQuery) ||
+                            contact.phoneNumber.contains(_searchQuery))
+                        .toList()
+                        .length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
