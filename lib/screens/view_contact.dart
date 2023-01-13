@@ -116,6 +116,7 @@ class _ViewContactState extends State<ViewContact> {
                       Icons.phone,
                     ],
                   ),
+                  SizedBox(height: 20.h),
                   Detail(
                     title: "Phone Number",
                     subtitle: widget.contact.phoneNumber,
