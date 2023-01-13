@@ -129,7 +129,7 @@ class Detail extends StatelessWidget {
 
   final String title;
   final String subtitle;
-  final IconData trailingIcon;
+  final List<IconData> trailingIcon;
 
   @override
   Widget build(BuildContext context) {
