@@ -150,9 +150,22 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        (trailingIcon.length > 1) ?  : TrailingIcon(
-          icon: trailingIcon,
-        ),
+        (trailingIcon.length > 1)
+            ? Stack(
+                children: [
+                  TrailingIcon(
+                    icon: trailingIcon[0],
+                  ),
+                  Positioned(
+                    child: TrailingIcon(
+                      icon: trailingIcon[1],
+                    ),
+                  )
+                ],
+              )
+            : TrailingIcon(
+                icon: trailingIcon[0],
+              ),
       ],
     );
   }
