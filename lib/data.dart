@@ -1,5 +1,7 @@
 import 'contact.dart';
 
+String? searchQuery;
+
 List<Contact> contacts = [
   Contact(
     firstName: "Aladin",

@@ -19,6 +19,11 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
           clipBehavior: Clip.none,
           children: [
             TextField(
+              onChanged: (value) {
+                setState(() {
+                  searchQuery = value;
+                });
+              },
               decoration: InputDecoration(
                 hintText: "Search",
                 border: OutlineInputBorder(
