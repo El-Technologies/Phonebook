@@ -106,12 +106,16 @@ class _ViewContactState extends State<ViewContact> {
             SizedBox(height: 20.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.h),
-              child: Detail(
-                title: "Phone Number",
-                subtitle: widget.contact.phoneNumber,
-                trailingIcon: const [
-                  Icons.message,
-                  Icons.phone,
+              child: Column(
+                children: [
+                  Detail(
+                    title: "Phone Number",
+                    subtitle: widget.contact.phoneNumber,
+                    trailingIcon: const [
+                      Icons.message,
+                      Icons.phone,
+                    ],
+                  ),
                 ],
               ),
             )
