@@ -116,6 +116,14 @@ class _ViewContactState extends State<ViewContact> {
                       Icons.phone,
                     ],
                   ),
+                  Detail(
+                    title: "Phone Number",
+                    subtitle: widget.contact.phoneNumber,
+                    trailingIcon: const [
+                      Icons.message,
+                      Icons.phone,
+                    ],
+                  ),
                 ],
               ),
             )
