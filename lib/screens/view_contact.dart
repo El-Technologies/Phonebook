@@ -153,14 +153,16 @@ class Detail extends StatelessWidget {
         ),
         (trailingIcon.length > 1)
             ? Stack(
+                clipBehavior: Clip.none,
                 children: [
-                  TrailingIcon(
-                    icon: trailingIcon[0],
-                  ),
                   Positioned(
+                    right: 20.w,
                     child: TrailingIcon(
-                      icon: trailingIcon[1],
+                      icon: trailingIcon[0],
                     ),
+                  ),
+                  TrailingIcon(
+                    icon: trailingIcon[1],
                   )
                 ],
               )
