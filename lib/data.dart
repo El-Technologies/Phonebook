@@ -1,6 +1,6 @@
 import 'contact.dart';
 
-String? searchQuery;
+String searchQuery = "";
 
 List<Contact> contacts = [
   Contact(

@@ -66,10 +66,10 @@ class _HomePageState extends State<HomePage> {
                     ? contacts.length
                     : contacts
                         .where((contact) =>
-                            contact.firstName.contains(_searchQuery) ||
-                            contact.lastName.contains(_searchQuery) ||
-                            contact.email.contains(_searchQuery) ||
-                            contact.phoneNumber.contains(_searchQuery))
+                            contact.firstName.contains(searchQuery) ||
+                            (contact.lastName.contains(searchQuery)) ||
+                            contact.email.contains(searchQuery) ||
+                            contact.phoneNumber.contains(searchQuery))
                         .toList()
                         .length,
                 itemBuilder: (context, index) {
