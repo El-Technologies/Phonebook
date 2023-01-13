@@ -119,7 +119,7 @@ class _ViewContactState extends State<ViewContact> {
                   SizedBox(height: 20.h),
                   if (widget.contact.email != null)
                     Detail(
-                      title: "Email",
+                      title: "Email Address",
                       subtitle: widget.contact.email!,
                       trailingIcon: const [
                         Icons.email,
