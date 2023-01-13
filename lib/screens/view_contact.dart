@@ -150,7 +150,7 @@ class Detail extends StatelessWidget {
             Text(subtitle),
           ],
         ),
-        (TrailingIcon(
+        (trailingIcon.length > 1) ?  : TrailingIcon(
           icon: trailingIcon,
         ),
       ],
