@@ -71,7 +71,7 @@ class _ViewContactState extends State<ViewContact> {
                     height: 40.h,
                     padding: EdgeInsets.only(right: 30.w),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 201, 199, 199),
+                      color: const Color.fromARGB(255, 201, 199, 199),
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     child: const Align(
