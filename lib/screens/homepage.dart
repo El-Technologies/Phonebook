@@ -15,6 +15,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String? _searchQuery;
+
   @override
   Widget build(BuildContext context) {
     contacts.sort((a, b) => a.firstName.compareTo(b.firstName));
