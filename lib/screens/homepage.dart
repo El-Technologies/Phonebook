@@ -67,8 +67,8 @@ class _HomePageState extends State<HomePage> {
                     : contacts
                         .where((contact) =>
                             contact.firstName.contains(searchQuery) ||
-                            contact.lastName"!contains(searchQuery) ||
-                            contact.email.contains(searchQuery) ||
+                            contact.lastName!.contains(searchQuery) ||
+                            contact.email!.contains(searchQuery) ||
                             contact.phoneNumber.contains(searchQuery))
                         .toList()
                         .length,
