@@ -117,13 +117,14 @@ class _ViewContactState extends State<ViewContact> {
                     ],
                   ),
                   SizedBox(height: 20.h),
-                  Detail(
-                    title: "Email",
-                    subtitle: widget.contact.email!,
-                    trailingIcon: const [
-                      Icons.email,
-                    ],
-                  ),
+                  if (widget.contact.email != null)
+                    Detail(
+                      title: "Email",
+                      subtitle: widget.contact.email!,
+                      trailingIcon: const [
+                        Icons.email,
+                      ],
+                    ),
                 ],
               ),
             )
@@ -152,6 +153,7 @@ class Detail extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
               title,
