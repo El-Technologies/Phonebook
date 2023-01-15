@@ -159,10 +159,16 @@ class Detail extends StatelessWidget {
               title,
               style: TextStyle(
                 color: Colors.grey,
-                fontSize: 16.sp,
+                fontSize: 12.sp,
               ),
             ),
-            Text(subtitle),
+            Text(
+              subtitle,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 15.sp,
+              ),
+            ),
           ],
         ),
         (trailingIcon.length > 1)
