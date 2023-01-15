@@ -54,6 +54,7 @@ class _ViewContactState extends State<ViewContact> {
                 color: Colors.white,
                 shape: BoxShape.circle,
               ),
+              child: CircleAvatar(backgroundImage: AssetImage(),),
             ),
             SizedBox(height: 20.h),
             Text(
