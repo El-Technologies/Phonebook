@@ -4,6 +4,7 @@ String searchQuery = "";
 
 List<Contact> contacts = [
   Contact(
+    pic: "assets/images/aladin.jpg",
     firstName: "Aladin",
     lastName: "Doe",
     phoneNumber: "+234 123 4567 890",
