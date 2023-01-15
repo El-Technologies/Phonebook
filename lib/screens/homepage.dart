@@ -92,7 +92,9 @@ class _HomePageState extends State<HomePage> {
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
-                          child: contacts[index].pi,
+                          child: contacts[index].pic != null
+                              ? CircleAvatar(backgroundImage: Image.asset(contacts[index].pic!),)
+                              : null,
                         ),
                       ),
                       title: Text(
