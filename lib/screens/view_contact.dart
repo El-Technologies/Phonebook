@@ -52,7 +52,7 @@ class _ViewContactState extends State<ViewContact> {
               width: 120.w,
               decoration: const BoxDecoration(
                 color: Colors.white,
-                shape: BoxShape.circle,zzzzzzzz
+                shape: BoxShape.circle,
               ),
               child: CircleAvatar(
                 backgroundImage: AssetImage(widget.contact.pic!),
