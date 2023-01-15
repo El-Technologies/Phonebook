@@ -10,11 +10,12 @@ List<Contact> contacts = [
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(
-    pic: "assets/images/sam.jpg",
+    pic: "assets/images/sam.jpeg",
     firstName: "Sam",
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(
+    pic: "assets/images/james.jpeg",
     firstName: "James",
     phoneNumber: "+234 123 4567 890",
   ),
