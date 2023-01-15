@@ -103,7 +103,7 @@ class _ViewContactState extends State<ViewContact> {
                 ],
               ),
             ),
-            SizedBox(height: 20.h),
+            SizedBox(height: 30.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.h),
               child: Column(
