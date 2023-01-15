@@ -10,6 +10,7 @@ List<Contact> contacts = [
     phoneNumber: "+234 123 4567 890",
   ),
   Contact(
+    pic: "assets/images/sam.jpg",
     firstName: "Sam",
     phoneNumber: "+234 123 4567 890",
   ),

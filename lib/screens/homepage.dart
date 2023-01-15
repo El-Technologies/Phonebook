@@ -93,7 +93,10 @@ class _HomePageState extends State<HomePage> {
                             shape: BoxShape.circle,
                           ),
                           child: contacts[index].pic != null
-                              ? CircleAvatar(backgroundImage: Image.asset(contacts[index].pic!),)
+                              ? CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage(contacts[index].pic!),
+                                )
                               : null,
                         ),
                       ),
